@@ -1,4 +1,7 @@
-Caracteristica: Pago de plan funerario
+#language: es
+
+Característica: de plan funerario
+
 
 Como cliente
 Quiero pagar mi plan funerario
@@ -13,13 +16,13 @@ Y el cliente se encuentra en la seccion de pagos
 Esquema del escenario: Pago exitoso
 
 Cuando el cliente selecciona el plan
-Y selecciona el metodo de pago "<metodoPago>"
-Y ingresa el monto "<monto>"
-Y confirma el pago
+Y  selecciona el metodo de pago "<metodoPago>"
+Y  ingresa el monto "<monto>"
+Y  confirma el pago
 
-Entonces el sistema registra la transaccion
-Y actualiza el estado del plan a "Activo"
-Y muestra el mensaje "Pago exitoso"
+Entonces  el sistema registra la transaccion
+Y  actualiza el estado del plan a "Activo"
+Y  muestra el mensaje "Pago exitoso"
 
 Ejemplos:
 | metodoPago     | monto   |

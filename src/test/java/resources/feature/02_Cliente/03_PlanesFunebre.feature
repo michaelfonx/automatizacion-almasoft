@@ -1,4 +1,7 @@
-Caracteristica: Adquirir plan funerario
+#language: es
+
+Característica: plan funerario
+
 
 Como cliente autenticado
 Quiero adquirir un plan funerario
@@ -17,7 +20,7 @@ Y confirma la compra del plan
 
 Entonces el sistema registra el plan en la base de datos
 Y el estado del plan queda "Pendiente"
-Y se muestra el mensaje "Plan adquirido correctamente"
+  Y se muestra el mensaje "Plan adquirido correctamente"
 
 Ejemplos:
 | nombrePlan     | precio   |
