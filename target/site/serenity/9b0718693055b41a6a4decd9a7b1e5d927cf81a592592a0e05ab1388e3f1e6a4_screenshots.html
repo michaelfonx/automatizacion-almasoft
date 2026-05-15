@@ -157,7 +157,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-05-2026 18:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-05-2026 21:22</span>
     <br style="clear:left"/>
 </div>
 
@@ -218,7 +218,7 @@ Para acceder a los servicios funerarios
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Dado que el cliente se encuentra en el modulo de registro<br>Cuando el cliente completa el formulario de registro<br>Entonces el sistema guarda el cliente en la base de datos<br>Y muestra el mensaje de registro "Registro exitoso"</div>
+        <div class="scenario">Dado que el cliente se encuentra en el modulo de registro<br>Cuando el cliente completa el formulario de registro<br><table class='embedded'><thead><th>primerNombre</th><th>segundoNombre</th><th>primerApellido</th><th>segundoApellido</th><th>direccion</th><th>documento</th><th>telefono</th><th>correo</th><th>contrasena</th><th>fechaNacimiento</th></thead><tbody><tr><td>&lt;primerNombre&gt;</td><td>&lt;segundoNombre&gt;</td><td>&lt;primerApellido&gt;</td><td>&lt;segundoApellido&gt;</td><td>&lt;direccion&gt;</td><td>&lt;documento&gt;</td><td>&lt;telefono&gt;</td><td>&lt;correo&gt;</td><td>&lt;contrasena&gt;</td><td>&lt;fechaNacimiento&gt;</td></tr></tbody></table><br>Entonces el sistema guarda el cliente en la base de datos<br>Y muestra el mensaje de registro "Registro exitoso"</div>
     </div>
 
     <div id="beforetable"></div>
@@ -229,7 +229,7 @@ Para acceder a los servicios funerarios
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Web driver exception: The following error occurred: unknown error: net::ERR_CONNECTION_REFUSED</span>
+                    <span class="error-message error-message-title">Cucumber exception: Arity mismatch: Step Definition 'co.com.automatizacionAlmasoft.stepsdefinitions.RegistroStepDefinition.elClienteCompletaElFormularioDeRegistro() in file:/C:/Users/fonse/IdeaProjects/Automatizacion%20Almasof/build/classes/java/test/' with pattern [^el cliente completa el formulario de registro$] is declared with 0 parameters. However, the gherkin step has 1 arguments [Table:[[primerNombre, segundoNombre, primerApellido, segundoApellido, direccion, documento, telefono, correo, contrasena, fechaNacimiento], [Juan, Carlos, Perez, Lopez, Calle 123 #45-67, 123456789, 3001234567, juanperez@mail.com, 12345678, 1995-05-10]]]. </span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -245,11 +245,11 @@ Para acceder a los servicios funerarios
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.WebDriverException </h4>
+                    <h4>cucumber.runtime.CucumberException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.automatizacionAlmasoft.tasks.AbrirPagina.performAs(AbrirPagina.java:24)<br />co.com.automatizacionAlmasoft.stepsdefinitions.RegistroStepDefinition.queElClienteSeEncuentraEnElModuloDeRegistro(RegistroStepDefinition.java:16)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
                     </div>
 
                 </div>
@@ -259,15 +259,20 @@ Para acceder a los servicios funerarios
 
 
                 <div class="panel-body">
-                    <a href="pagesource17353453204667137635.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource15038078406431068668.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="6c4bad71fdcc889608cc0a10e777339902e2d9eac9c5ff8930a3b6d99a01fa72.png" title=" Example: {primerNombre=Juan, segundoNombre=Carlos, primerApellido=Perez, segundoApellido=Lopez, direccion=Calle 123 #45-67, documento=123456789, telefono=3001234567, correo=juanperez@mail.com, contrasena=12345678, fechaNacimiento=1995-05-10}" width="1925"/>
-                <img src="6c4bad71fdcc889608cc0a10e777339902e2d9eac9c5ff8930a3b6d99a01fa72.png" title=" Dado que el cliente se encuentra en el modulo de registro" width="1925"/>
-                <img src="6c4bad71fdcc889608cc0a10e777339902e2d9eac9c5ff8930a3b6d99a01fa72.png" title=" Usuario abrir pagina" width="1925"/>
-                <img src="6c4bad71fdcc889608cc0a10e777339902e2d9eac9c5ff8930a3b6d99a01fa72.png" title=" usuario opens the Inicio: <span class='error-color'>ERROR</span>" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Example: {primerNombre=Juan, segundoNombre=Carlos, primerApellido=Perez, segundoApellido=Lopez, direccion=Calle 123 #45-67, documento=123456789, telefono=3001234567, correo=juanperez@mail.com, contrasena=12345678, fechaNacimiento=1995-05-10}" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Dado que el cliente se encuentra en el modulo de registro" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Usuario abrir pagina" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" usuario opens the Inicio" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Usuario abrir pagina (completed)" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Dado que el cliente se encuentra en el modulo de registro (completed)" width="1925"/>
+                <img src="7c059b75d34180b53bf20ee4ac8d5300b6fbd8223a0798fe371d18f9dbeaca55.png" title=" Cuando el cliente completa el formulario de registro
+| primerNombre | segundoNombre | primerApellido | segundoApellido | direccion | documento | telefono | correo | contrasena | fechaNacimiento |
+| Juan | Carlos | Perez | Lopez | Calle 123 #45-67 | 123456789 | 3001234567 | juanperez@mail.com | 12345678 | 1995-05-10 |: <span class='error-color'>ERROR</span>" width="1925"/>
             </div>
         </div>
 

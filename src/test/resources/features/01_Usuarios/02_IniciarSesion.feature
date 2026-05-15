@@ -1,19 +1,20 @@
 #language: es
 
-Característica: Inicio de sesion
 
+Característica: Autenticacion en el sistema funerario
   Como cliente registrado
-  Quiero iniciar sesion
-  Para acceder al sistema
+  Quiero iniciar sesion en el sistema
+  Para acceder al contenido y funcionalidades disponibles en mi cuenta
 
   @login
-  Esquema del escenario: Inicio exitoso
-
+  Esquema del escenario: Verificar el inicio de sesion exitoso en el sistema
     Dado que el cliente se encuentra en la pagina de inicio de sesion
     Cuando el cliente ingresa sus credenciales
+      | correo   | contraseña   |
+      | <correo> | <contraseña> |
     Entonces el sistema valida las credenciales
     Y redirige al panel del cliente
 
     Ejemplos:
-      | correo              | contraseña |
+      | correo             | contraseña |
       | juanperez@mail.com | 12345678   |
