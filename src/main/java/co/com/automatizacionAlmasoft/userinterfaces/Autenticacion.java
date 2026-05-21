@@ -20,4 +20,8 @@ public class Autenticacion extends PageObject {
             Target.the("Click Boton inicio sesion")
                     .located(By.xpath("//button[contains(text(),'Iniciar Sesión')]"));
 
+    public static Target TEXTO_BIENVENIDA =
+            Target.the("Texto de bienvenida del cliente")
+                    .located(By.xpath("//h1[contains(text(),'Bienvenido')]"));
+
 }

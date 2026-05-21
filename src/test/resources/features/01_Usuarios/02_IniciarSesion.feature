@@ -16,5 +16,5 @@ Característica: Autenticacion en el sistema funerario
     Y redirige al panel del cliente
 
     Ejemplos:
-      | correo             | contraseña |
-      | juanperez@mail.com | 12345678   |
+      | correo              | contraseña |
+      | maicol777@gmail.com | 123456789  |

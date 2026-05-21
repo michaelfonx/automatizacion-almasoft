@@ -1,6 +1,9 @@
 package co.com.automatizacionAlmasoft.tasks;
 
 import co.com.automatizacionAlmasoft.Models.CredencialesInicioSesion;
+import co.com.automatizacionAlmasoft.utils.SesionVariable;
+
+import net.serenitybdd.core.steps.Instrumented;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -8,11 +11,10 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import net.serenitybdd.core.steps.Instrumented;
-
 import java.util.List;
 
 import static co.com.automatizacionAlmasoft.userinterfaces.Autenticacion.*;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class Autenticarse implements Task {
 
@@ -24,7 +26,7 @@ public class Autenticarse implements Task {
 
     }
 
-    public static <CredencialesInicioSesion> Autenticarse aute(List<CredencialesInicioSesion> credenciales) {
+    public static Autenticarse aute(List<CredencialesInicioSesion> credenciales) {
 
         return Instrumented.instanceOf(Autenticarse.class)
                 .withProperties(credenciales);
@@ -48,6 +50,11 @@ public class Autenticarse implements Task {
 
                 Click.on(BTN_INICIOSESION)
 
+        );
+
+        theActorInTheSpotlight().remember(
+                SesionVariable.usuario.toString(),
+                credenciales.get(0).getCorreo()
         );
 
     }
