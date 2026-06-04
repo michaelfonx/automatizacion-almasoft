@@ -3,13 +3,13 @@ package co.com.automatizacionAlmasoft.Models;
 public class CredencialesInicioSesion {
 
     private String correo;
-    private String contraseña;
+    private String contrasena;
 
     public String getCorreo() {
         return correo;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 }

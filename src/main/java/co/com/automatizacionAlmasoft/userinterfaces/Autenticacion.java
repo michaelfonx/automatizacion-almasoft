@@ -8,6 +8,12 @@ import org.openqa.selenium.By;
 @DefaultUrl(value = "http://localhost:3000/")
 public class Autenticacion extends PageObject {
 
+
+    public static Target BTN_IR_LOGIN =
+            Target.the("Boton ir a login")
+                    .located(By.xpath("//a[@href='/pages/IniciarSesion']"));
+
+
     public static Target INPUT_USUARIO =
             Target.the("Ingreso del Usuario")
                     .located(By.name("usuario_correo"));
@@ -15,6 +21,7 @@ public class Autenticacion extends PageObject {
     public static Target INPUT_CLAVE =
             Target.the("Ingreso del password")
                     .located(By.name("usuario_credencial"));
+
 
     public static Target BTN_INICIOSESION =
             Target.the("Click Boton inicio sesion")

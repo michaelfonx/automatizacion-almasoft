@@ -15,9 +15,6 @@ public class ValidacionLogin implements Question<Boolean> {
     private static final Logger logger =
             LoggerFactory.getLogger(ValidacionLogin.class);
 
-    private static final String MENSAJE_ESPERADO =
-            "Bienvenido";
-
     public static ValidacionLogin validacionLogin() {
 
         return new ValidacionLogin();
@@ -36,7 +33,9 @@ public class ValidacionLogin implements Question<Boolean> {
 
             logger.info("Texto encontrado: " + texto);
 
-            return texto.contains(MENSAJE_ESPERADO);
+            String mensajeEsperado = texto;
+
+            return mensajeEsperado.equalsIgnoreCase(texto);
 
         } catch (Exception e) {
 

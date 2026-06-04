@@ -6,7 +6,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
+
+import static co.com.automatizacionAlmasoft.userinterfaces.Autenticacion.BTN_IR_LOGIN;
 
 public class AbrirPagina implements Task {
 
@@ -22,7 +25,11 @@ public class AbrirPagina implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Open.browserOn(inicio)
+
+                Open.browserOn(inicio),
+
+                Click.on(BTN_IR_LOGIN)
+
         );
 
     }

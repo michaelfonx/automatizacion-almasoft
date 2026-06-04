@@ -45,7 +45,7 @@ public class Autenticarse implements Task {
 
                 Click.on(INPUT_CLAVE),
 
-                Enter.theValue(credenciales.get(0).getContraseña())
+                Enter.theValue(credenciales.get(0).getContrasena())
                         .into(INPUT_CLAVE),
 
                 Click.on(BTN_INICIOSESION)

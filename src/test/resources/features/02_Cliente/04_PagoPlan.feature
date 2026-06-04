@@ -1,22 +1,19 @@
 #language: es
 
 Característica: Pago de plan funerario
-  Como cliente
-  Quiero pagar mi plan funerario
-  Para activarlo y acceder a los servicios
 
-  Antecedentes:
-    Dado que el cliente ha iniciado sesion correctamente
-    Y se encuentra en en modulo de plan
+  Escenario: Registrar pago exitoso
 
-  @pago
-  Esquema del escenario: Verificar el pago exitoso del plan funerario
-    Cuando el cliente realiza el pago del plan
-      | metodoPago       |
-      | <metodoPago>     |
-    Entonces el sistema registra la transaccion
-    Y muestra el mensaje de pago "Pago exitoso"
+    Dado que el cliente se encuentra en el modulo de inicio de sesion
 
-    Ejemplos:
+    Cuando el cliente inicia sesion para adquirir un plan
+      | correo              | contrasena |
+      | maicol777@gmail.com | 123456789  |
+
+    Y selecciona un plan funerario
+
+    Y registra el pago
       | metodoPago |
-      | Tarjeta    |
+      | PSE        |
+
+    Entonces muestra el plan adquirido

@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Pago de plan funerario","type":"feature","href":"a69d6ac75ee1cdf1bdad5f333563aac7b55b5c821070895bec7fa948eb1b5ea0.html","nodes":[],"selectable":false,"tags":["",""]}];
+            var requirementsTree = [{"text":"Pago de plan funerario","type":"feature","href":"a69d6ac75ee1cdf1bdad5f333563aac7b55b5c821070895bec7fa948eb1b5ea0.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -193,6 +193,7 @@
             <span class="breadcrumbs">
             <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
 
+                > <a href="312b99de6c050ad5e67ca2371f62f1b64626981604bfbf58af778802635ddf19.html">02 Cliente</a>
 
 
                 > <span class="truncate-40">Pago De Plan Funerario</span>
@@ -217,7 +218,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-06-2026 19:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -231,18 +232,28 @@
                         <div>
                             <div clas="table">
                                 <div class="row">
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-8">
                                     <span>
                                             <h2><i class="fa fa-book"></i> Feature:  Pago De Plan Funerario</h2>
                                         </span>
                                 </div>
+                                    <div class="col-sm-4">
+                                        <span class="feature-tags">
+                                                <p class="tag">
+                                                    <span class="badge tag-badge" style="background:default;">
+                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
+                                                                                          style="background:default;"
+                                                                                          href="312b99de6c050ad5e67ca2371f62f1b64626981604bfbf58af778802635ddf19.html">02 Cliente
+                                                        (capability)</a>
+                                                    </span>
+                                                </p>
+                                        </span>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
                             <div class="requirementNarrativeTitle">
-                                Como cliente<br />
-Quiero pagar mi plan funerario<br />
-Para activarlo y acceder a los servicios
+                                
                             </div>
 
                         </div>
@@ -275,11 +286,82 @@ Para activarlo y acceder a los servicios
 
                                             <div id="toc">
                                                 <table class="table" id="toc-table">
+                                                        <tr>
+                                                            <td style="width:95%;" class="toc-title">
+                                                                <a href="#67d0fbb7ad04283129d4fe33c6945b40b44688094b04efcf756104ec2ae6b2e3" title="View scenario details" >Registrar pago exitoso</a>
+
+
+                                                            </td>
+                                                            <td style="width:5%;">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="25137f7db77835b4bcbf48acdaf119fafe5c554edf3ac95a79c3cef0b3d8437b.html"
+                                                                               title="View test results">
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                            </a>
+
+                                                                        
+                                                                        </td>
+                                                                        <td>
+                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
+                                                                               href="25137f7db77835b4bcbf48acdaf119fafe5c554edf3ac95a79c3cef0b3d8437b.html"
+                                                                               title="View test results">
+                                                                                <i class="fas fa-search-plus"></i>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
                                                 </table>
 
                                             </div>
 
                                             <h3>Scenario details</h3>
+
+                                                <div class="scenario-docs card" id="67d0fbb7ad04283129d4fe33c6945b40b44688094b04efcf756104ec2ae6b2e3">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                <a href="25137f7db77835b4bcbf48acdaf119fafe5c554edf3ac95a79c3cef0b3d8437b.html" title="View test results">Registrar pago exitoso</a>
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Dado que el cliente se encuentra en el modulo de inicio de sesion</p>
+                                                            <p><p>Cuando el cliente inicia sesion para adquirir un plan</p>
+<table>
+<thead>
+<tr><th>correo</th><th>contrasena</th></tr>
+</thead>
+<tbody>
+<tr><td>maicol777@gmail.com</td><td>123456789</td></tr>
+</tbody>
+</table>
+</p>
+                                                            <p>Y selecciona un plan funerario</p>
+                                                            <p><p>Y registra el pago</p>
+<table>
+<thead>
+<tr><th>metodoPago</th></tr>
+</thead>
+<tbody>
+<tr><td>PSE</td></tr>
+</tbody>
+</table>
+</p>
+                                                            <p>Entonces muestra el plan adquirido</p>
+                                                        <div class="examples">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -288,7 +370,41 @@ Para activarlo y acceder a los servicios
                             <div id="results" class="tab-pane fade">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-4">
+
+                                            <div style="width:300px;" class="chart-container automated-and-manual-results">
+                                                <div class="ct-chart ct-square"></div>
+                                            </div>
+                                            <script>
+
+                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                // Our series array that contains series objects or in this case series data arrays
+
+                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+
+                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
+                                                // as you saw in the previous example
+                                                var options = {
+                                                    width: 350,
+                                                    height: 300
+                                                };
+
+                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                                                    new Chartist.Pie('.ct-chart', {
+                                                        series: series,
+                                                        labels: labels,
+                                                    }, {
+                                                        donut: true,
+                                                        donutWidth: 60,
+                                                        donutSolid: true,
+                                                        startAngle: 270,
+                                                        showLabel: true
+                                                    }, options);
+                                                });
+
+                                            </script>
+                                        </div>
+                                        <div class="col-sm-8">
 
                                         <table class="table">
                                             <thead>
@@ -301,11 +417,12 @@ Para activarlo y acceder a los servicios
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="e41622ce57ef7b22d92e72b072bb81b8e8eb3f3bf596832bc33f32ea5206abe2.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -359,7 +476,7 @@ Para activarlo y acceder a los servicios
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats">1</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -381,11 +498,11 @@ Para activarlo y acceder a los servicios
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
-                                                        <td>0ms</td>
+                                                        <td>23s</td>
+                                                        <td>23ms</td>
+                                                        <td>23s</td>
+                                                        <td>23s</td>
+                                                        <td>23s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -397,7 +514,31 @@ Para activarlo y acceder a los servicios
                                             <div class="col-sm-12">
                                                 <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                            No automated tests were executed
+                                            <table class="scenario-result-table table" id="scenario-results">
+                                                <thead>
+                                                <tr>
+                                                    <th class="test-name-column">Scenario</th>
+                                                    <th>Steps</th>
+                                                    <th>Start Time</th>
+                                                    <th>Duration</th>
+                                                    <th>Result</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="25137f7db77835b4bcbf48acdaf119fafe5c554edf3ac95a79c3cef0b3d8437b.html">Registrar pago exitoso</a>
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>19:04:30</td>
+                                                    <td>23s 943ms</td>
+                                                    <td>
+                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
 
                                             </div>
                                         </div>
