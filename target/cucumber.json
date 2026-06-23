@@ -1,12 +1,12 @@
 [
   {
-    "line": 3,
+    "line": 4,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 89758600,
+              "duration": 84656500,
               "status": "passed"
             },
             "match": {
@@ -14,34 +14,34 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Seleccionar plan funerario",
+        "line": 20,
+        "name": "Verificar el inicio de sesion exitoso en el sistema",
         "description": "",
-        "id": "selección-de-plan-funerario;seleccionar-plan-funerario",
+        "id": "autenticacion-en-el-sistema-funerario;verificar-el-inicio-de-sesion-exitoso-en-el-sistema;;2",
         "type": "scenario",
-        "keyword": "Escenario",
+        "keyword": "Esquema del escenario",
         "steps": [
           {
             "result": {
-              "duration": 8050103400,
+              "duration": 7130797600,
               "status": "passed"
             },
-            "line": 7,
-            "name": "que el cliente se encuentra en el modulo de inicio de sesion",
+            "line": 11,
+            "name": "que el cliente se encuentra en la pagina de inicio de sesion",
             "match": {
-              "location": "PlanFunebreStepDefinition.queElClienteSeEncuentraEnElModuloDeInicioDeSesion()"
+              "location": "LoginStepDefinition.queElClienteSeEncuentraEnLaPaginaDeInicioDeSesion()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 6076994200,
+              "duration": 4851467300,
               "status": "passed"
             },
-            "line": 9,
-            "name": "el cliente inicia sesion para adquirir un plan",
+            "line": 12,
+            "name": "el cliente ingresa sus credenciales",
             "match": {
-              "location": "PlanFunebreStepDefinition.elClienteIniciaSesionParaAdquirirUnPlan(CredencialesInicioSesion\u003e)"
+              "location": "LoginStepDefinition.elClienteIngresaSusCredenciales(CredencialesInicioSesion\u003e)"
             },
             "rows": [
               {
@@ -61,36 +61,41 @@
           },
           {
             "result": {
-              "duration": 2776639100,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "selecciona un plan funerario",
-            "match": {
-              "location": "PlanFunebreStepDefinition.seleccionaUnPlanFunerario()"
-            },
-            "keyword": "Y "
-          },
-          {
-            "result": {
-              "duration": 551406600,
+              "duration": 922981400,
               "status": "passed"
             },
             "line": 15,
-            "name": "se muestra el formulario de pago",
+            "name": "el sistema valida las credenciales",
             "match": {
-              "location": "PlanFunebreStepDefinition.seMuestraElFormularioDePago()"
+              "location": "LoginStepDefinition.elSistemaValidaLasCredenciales()"
             },
             "keyword": "Entonces "
+          },
+          {
+            "result": {
+              "duration": 5163800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "redirige al panel del cliente",
+            "match": {
+              "location": "LoginStepDefinition.redirigeAlPanelDelCliente()"
+            },
+            "keyword": "Y "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
           }
         ]
       }
     ],
-    "name": "Selección de plan funerario",
-    "description": "",
-    "id": "selección-de-plan-funerario",
+    "name": "Autenticacion en el sistema funerario",
+    "description": "  Como cliente registrado\n  Quiero iniciar sesion en el sistema\n  Para acceder al contenido y funcionalidades disponibles en mi cuenta",
+    "id": "autenticacion-en-el-sistema-funerario",
     "keyword": "Característica",
-    "uri": "src/test/resources/features/02_Cliente/03_PlanFunebre.feature",
+    "uri": "src/test/resources/features/02_Cliente/02_IniciarSesion.feature",
     "tags": []
   }
 ]
