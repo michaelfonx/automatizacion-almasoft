@@ -1,10 +1,13 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Autenticar en la pagina de AlmaSoft","Verificar la autenticacion exitosa en la pagina de AlmaSoft","SUCCESS","2026-06-25T17:24:15.1680661-05:00[America/Bogota]","0.0","19.26"
 "Crear un nuevo producto","Crear un nuevo producto exitosamente","SUCCESS","2026-06-25T17:24:35.3129689-05:00[America/Bogota]","0.0","18.57"
 "Actualizar un producto","Actualizar un producto exitosamente","SUCCESS","2026-06-25T17:24:54.3705404-05:00[America/Bogota]","0.0","11.63"
 "Crear una nueva categoria","Crear una nueva categoria exitosamente","SUCCESS","2026-06-25T17:25:06.4263357-05:00[America/Bogota]","0.0","9.64"
 "Crear un nuevo usuario","Crear un nuevo usuario exitosamente","SUCCESS","2026-06-25T17:25:16.7123174-05:00[America/Bogota]","0.0","14.27"
 "Registro de usuario funerario","Registro exitoso de cliente","SUCCESS","2026-05-31T10:51:45.289362-05:00[America/Bogota]","0.0","28.09"
+=======
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
 "Autenticacion en el sistema funerario","Verificar el inicio de sesion exitoso en el sistema","SUCCESS","2026-06-23T17:58:36.4803275-05:00[America/Bogota]","0.0","14.25"
-"Selección de plan funerario","Seleccionar plan funerario","SUCCESS","2026-06-03T19:30:53.8703637-05:00[America/Bogota]","0.0","17.79"
-"Pago de plan funerario","Registrar pago exitoso","SUCCESS","2026-06-01T19:04:30.7092468-05:00[America/Bogota]","0.0","23.94"
+"Selección de plan funerario","Seleccionar plan funerario","SUCCESS","2026-06-24T19:21:14.0465913-05:00[America/Bogota]","0.0","15.45"
+"Pago de plan funerario","Registrar pago exitoso","SUCCESS","2026-06-24T19:21:45.1955124-05:00[America/Bogota]","0.0","20.18"

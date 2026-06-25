@@ -6,7 +6,11 @@
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 57491500,
+=======
+              "duration": 93192200,
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
               "status": "passed"
             },
             "match": {
@@ -14,15 +18,23 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 10,
         "name": "Verificar la autenticacion exitosa en la pagina de AlmaSoft",
         "description": "",
         "id": "autenticar-en-la-pagina-de-almasoft;verificar-la-autenticacion-exitosa-en-la-pagina-de-almasoft",
+=======
+        "line": 5,
+        "name": "Registrar pago exitoso",
+        "description": "",
+        "id": "pago-de-plan-funerario;registrar-pago-exitoso",
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
         "type": "scenario",
         "keyword": "Escenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 11332883500,
               "status": "passed"
             },
@@ -30,11 +42,21 @@
             "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
             "match": {
               "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+=======
+              "duration": 7290760700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que el cliente se encuentra en el modulo de inicio de sesion",
+            "match": {
+              "location": "PlanFunebreStepDefinition.queElClienteSeEncuentraEnElModuloDeInicioDeSesion()"
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
             },
             "keyword": "Dado "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6406293200,
               "status": "passed"
             },
@@ -42,6 +64,15 @@
             "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
             "match": {
               "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+=======
+              "duration": 4895267400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "el cliente inicia sesion para adquirir un plan",
+            "match": {
+              "location": "PlanFunebreStepDefinition.elClienteIniciaSesionParaAdquirirUnPlan(CredencialesInicioSesion\u003e)"
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
             },
             "rows": [
               {
@@ -61,6 +92,7 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 460317200,
               "status": "passed"
             },
@@ -75,10 +107,58 @@
         "tags": [
           {
             "name": "@autenticacion"
+=======
+              "duration": 2087986800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "selecciona un plan funerario",
+            "match": {
+              "location": "PlanFunebreStepDefinition.seleccionaUnPlanFunerario()"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 4980817100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "registra el pago",
+            "match": {
+              "location": "PagoPlanStepDefinition.registraElPago(PagoPlanData\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "metodoPago"
+                ]
+              },
+              {
+                "cells": [
+                  "PSE"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 579815400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "muestra el plan adquirido",
+            "match": {
+              "location": "PagoPlanStepDefinition.muestraElPlanAdquirido()"
+            },
+            "keyword": "Entonces "
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "Autenticar en la pagina de AlmaSoft",
     "description": "  Como usuario de AlmaSoft\n  Quiero autenticar en el portal de AlmaSoft\nPara poder acceder al contenido y funcionalidades disponibles segun mi rol y cuenta.",
     "id": "autenticar-en-la-pagina-de-almasoft",
@@ -730,6 +810,13 @@
     "id": "crear-un-nuevo-usuario",
     "keyword": "Característica",
     "uri": "src/test/resources/features/01_Administrador/05-CrearUsuario.feature",
+=======
+    "name": "Pago de plan funerario",
+    "description": "",
+    "id": "pago-de-plan-funerario",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/02_Cliente/04_PagoPlan.feature",
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
     "tags": []
   }
 ]

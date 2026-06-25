@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Actualizar un producto","Actualizar un producto exitosamente","ERROR","2026-06-24T17:22:26.4497077-05:00[America/Bogota]","0.0","27.58"
+=======
+"Registro de usuario funerario","Registro exitoso de cliente","ERROR","2026-06-24T19:20:02.3155456-05:00[America/Bogota]","0.0","15.98"
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2

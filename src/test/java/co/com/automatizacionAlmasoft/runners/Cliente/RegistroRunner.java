@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/01_Usuarios/01_Registrarse.feature",
+        features = "src/test/resources/features/02_Cliente/01_Registrarse.feature",
         glue ={"co.com.automatizacionAlmasoft.stepsdefinitions","co.com.automatizacionAlmasoft.utils.hooks"},
         plugin = {"pretty", "html:target/cucumber-reports"},
         snippets = SnippetType.CAMELCASE

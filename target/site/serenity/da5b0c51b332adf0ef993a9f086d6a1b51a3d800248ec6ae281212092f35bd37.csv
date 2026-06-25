@@ -1,6 +1,10 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Autenticar en la pagina de AlmaSoft","Verificar la autenticacion exitosa en la pagina de AlmaSoft","FAILURE","2026-06-25T17:20:33.5457853-05:00[America/Bogota]","0.0","34.22"
 "Crear un nuevo producto","Crear un nuevo producto exitosamente","FAILURE","2026-06-25T17:21:13.2842185-05:00[America/Bogota]","0.0","30.41"
 "Actualizar un producto","Actualizar un producto exitosamente","FAILURE","2026-06-25T17:21:49.5527971-05:00[America/Bogota]","0.0","29.4"
 "Crear una nueva categoria","Crear una nueva categoria exitosamente","FAILURE","2026-06-25T17:22:19.9603866-05:00[America/Bogota]","0.0","28.87"
 "Crear un nuevo usuario","Crear un nuevo usuario exitosamente","FAILURE","2026-06-25T17:22:49.5138158-05:00[America/Bogota]","0.0","29.79"
+=======
+"Selección de plan funerario","Seleccionar plan funerario","FAILURE","2026-06-24T19:20:28.6139526-05:00[America/Bogota]","0.0","34.98"
+>>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
