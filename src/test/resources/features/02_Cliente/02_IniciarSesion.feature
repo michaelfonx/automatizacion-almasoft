@@ -10,8 +10,10 @@ Característica: Autenticacion en el sistema funerario
   Esquema del escenario: Verificar el inicio de sesion exitoso en el sistema
     Dado que el cliente se encuentra en la pagina de inicio de sesion
     Cuando el cliente ingresa sus credenciales
+
       | correo   | contrasena   |
       | <correo> | <contrasena> |
+
     Entonces el sistema valida las credenciales
     Y redirige al panel del cliente
 

@@ -1,6 +1,6 @@
 package co.com.automatizacionAlmasoft.tasks.Cliente;
 
-import co.com.automatizacionAlmasoft.Models.CredencialesInicioSesion;
+import co.com.automatizacionAlmasoft.models.CredencialesInicioSesion;
 import co.com.automatizacionAlmasoft.utils.SesionVariable;
 
 import net.serenitybdd.core.steps.Instrumented;

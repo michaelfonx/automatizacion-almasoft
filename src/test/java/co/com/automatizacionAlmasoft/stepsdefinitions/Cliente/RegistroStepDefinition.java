@@ -1,6 +1,6 @@
 package co.com.automatizacionAlmasoft.stepsdefinitions.Cliente;
 
-import co.com.automatizacionAlmasoft.Models.DatosRegistro;
+import co.com.automatizacionAlmasoft.models.DatosRegistro;
 import co.com.automatizacionAlmasoft.questions.Cliente.ValidacionRegistro;
 import co.com.automatizacionAlmasoft.tasks.Cliente.IrARegistro;
 import co.com.automatizacionAlmasoft.tasks.Cliente.RegistrarCliente;

@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">AutomatizacionAlmasoft</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fce65cd19513a46e653841156bba74bc4172c9c38773af595c1f90dd80a3036c.html">Actualizar Un Producto</a></span>
+                > <span class="truncate-60"><a
+                    href="102fc9e1a5a6e9ef7c1be3b276a41a60068ae8c0257ce1938b8017b328e329a4.html">Actualizar un producto exitosamente </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-06-2026 17:24</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Actualizar Un Producto </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario Administrador de AlmaSoft autenticado<br />
+Quiero actualizar la información de un producto<br />
+Para mantener los datos actualizados de los productos
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="7a158699705c48f8562728fda6a335ef0743465da4e1a714145b8b28072ae805.html">Actualizar Producto
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Actualizar un producto exitosamente
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" Dado que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft" width="1925"/>
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" Usuario abrir pagina" width="1925"/>
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" usuario opens the Inicio" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" usuario clicks on Boton ir a login" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" Usuario abrir pagina (completed)" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" Dado que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft (completed)" width="1925"/>
+                <img src="71fd78252756f67dcdb690447c3c93c0fdf42a8843065c0afbe488954e5d2688.png" title=" Cuando ingrese las credenciales correctas (Correo electronico y contrase&ntilde;a)
+| correo | contrasena |
+| admin@gmail.com | 123456 |" width="1925"/>
+                <img src="71fd78252756f67dcdb690447c3c93c0fdf42a8843065c0afbe488954e5d2688.png" title=" Usuario autenticarse" width="1925"/>
+                <img src="71fd78252756f67dcdb690447c3c93c0fdf42a8843065c0afbe488954e5d2688.png" title=" usuario clicks on Correo" width="1925"/>
+                <img src="75af35bc835b190e356535942cfdfc3a20c8dbd680a6c314aaf305033bf4f170.png" title=" usuario enters 'admin@gmail.com' into Correo" width="1925"/>
+                <img src="862b8e5d9965fcd1e87ce5592be37558b5f35f287de3c5e9c5072309052ae193.png" title=" usuario clicks on Contrase&ntilde;a" width="1925"/>
+                <img src="c67fb30ae92a747ca19d22153633b6f4a759079bada5d977d587569d5062394a.png" title=" usuario enters '123456' into Contrase&ntilde;a" width="1925"/>
+                <img src="4562e73212e9719be110f9c3bda4e84a43947bb33ee0989f9b8f931a96850289.png" title=" usuario clicks on Boton enviar login" width="1925"/>
+                <img src="4562e73212e9719be110f9c3bda4e84a43947bb33ee0989f9b8f931a96850289.png" title=" Usuario autenticarse (completed)" width="1925"/>
+                <img src="4562e73212e9719be110f9c3bda4e84a43947bb33ee0989f9b8f931a96850289.png" title=" Cuando ingrese las credenciales correctas (Correo electronico y contrase&ntilde;a)
+| correo | contrasena |
+| admin@gmail.com | 123456 | (completed)" width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Entonces se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina." width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Then validacion login admin" width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Entonces se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina. (completed)" width="1925"/>
+                <img src="0b5a9bec0b46fce1b0cbaee19b874360c72dd4d6cd89c3582840da972e71441e.png" title=" Cuando ingrese al m&oacute;dulo de productos" width="1925"/>
+                <img src="0b5a9bec0b46fce1b0cbaee19b874360c72dd4d6cd89c3582840da972e71441e.png" title=" Usuario abrir modulo productos" width="1925"/>
+                <img src="0b5a9bec0b46fce1b0cbaee19b874360c72dd4d6cd89c3582840da972e71441e.png" title=" usuario clicks on Bot&oacute;n men&uacute; productos" width="1925"/>
+                <img src="0b5a9bec0b46fce1b0cbaee19b874360c72dd4d6cd89c3582840da972e71441e.png" title=" Usuario abrir modulo productos (completed)" width="1925"/>
+                <img src="0b5a9bec0b46fce1b0cbaee19b874360c72dd4d6cd89c3582840da972e71441e.png" title=" Cuando ingrese al m&oacute;dulo de productos (completed)" width="1925"/>
+                <img src="4e3acec026721aa78741d0e2f4a0de304f6f7869912775f880c80c8008512a8f.png" title=" Y seleccione el producto &quot;Ataud Premiun&quot;" width="1925"/>
+                <img src="4e3acec026721aa78741d0e2f4a0de304f6f7869912775f880c80c8008512a8f.png" title=" Usuario seleccionar producto" width="1925"/>
+                <img src="4e3acec026721aa78741d0e2f4a0de304f6f7869912775f880c80c8008512a8f.png" title=" usuario enters 'Ataud Premiun' into Campo buscar producto" width="1925"/>
+                <img src="bfb808a1ae8cdd351efd571191fd1a9aa5830a95f241cd675a713c69da129560.png" title=" usuario clicks on Bot&oacute;n acciones" width="1925"/>
+                <img src="c31f4de74d421368bda0ff9cdf909ded704df4d48fb05f09411748792f315399.png" title=" usuario clicks on Bot&oacute;n editar" width="1925"/>
+                <img src="c31f4de74d421368bda0ff9cdf909ded704df4d48fb05f09411748792f315399.png" title=" Usuario seleccionar producto (completed)" width="1925"/>
+                <img src="c31f4de74d421368bda0ff9cdf909ded704df4d48fb05f09411748792f315399.png" title=" Y seleccione el producto &quot;Ataud Premiun&quot; (completed)" width="1925"/>
+                <img src="43f77ce63158f3f9acfef272098875d59b6649ceb8925ab2378785a00cd8db1e.png" title=" Y actualice los datos del producto
+| precio | stock |
+| 450000 | 20 |" width="1925"/>
+                <img src="43f77ce63158f3f9acfef272098875d59b6649ceb8925ab2378785a00cd8db1e.png" title=" Usuario actualizar producto" width="1925"/>
+                <img src="43f77ce63158f3f9acfef272098875d59b6649ceb8925ab2378785a00cd8db1e.png" title=" usuario clears field Campo precio" width="1925"/>
+                <img src="098919226be8dbf1859e1a8ebcccf802671eda8976e4586de6570bc9725db261.png" title=" usuario enters '450000' into Campo precio" width="1925"/>
+                <img src="e19f230f300d93ffdbded6fa971f7b4f010e46507402fad00b2acfb2445f39f0.png" title=" usuario clears field Campo stock" width="1925"/>
+                <img src="d3dc53844e22053a138b8118bd9ab5417207fa5ff313ca5b647b1d77f9b7be4b.png" title=" usuario enters '20' into Campo stock" width="1925"/>
+                <img src="b28e5d60f56c8d29a130216f8f9c9d4526af467c31f73c0474a78648d1bd5506.png" title=" usuario clicks on Bot&oacute;n guardar producto" width="1925"/>
+                <img src="b28e5d60f56c8d29a130216f8f9c9d4526af467c31f73c0474a78648d1bd5506.png" title=" Usuario actualizar producto (completed)" width="1925"/>
+                <img src="b28e5d60f56c8d29a130216f8f9c9d4526af467c31f73c0474a78648d1bd5506.png" title=" Y actualice los datos del producto
+| precio | stock |
+| 450000 | 20 | (completed)" width="1925"/>
+                <img src="b28e5d60f56c8d29a130216f8f9c9d4526af467c31f73c0474a78648d1bd5506.png" title=" Entonces el sistema deber&aacute; mostrar el mensaje &quot;Producto actualizado correctamente&quot;: <span class='success-color'>SUCCESS</span>" width="1925"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.1</span>
+</div>
+</body>
+</html>

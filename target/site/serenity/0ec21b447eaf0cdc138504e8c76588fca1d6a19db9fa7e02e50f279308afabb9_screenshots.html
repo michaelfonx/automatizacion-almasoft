@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">AutomatizacionAlmasoft</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fe574546a267f4380aac0e1e6a27d49ff986b3aaf3292f6580291db454cd9a12.html">Crear Un Nuevo Usuario</a></span>
+                > <span class="truncate-60"><a
+                    href="0ec21b447eaf0cdc138504e8c76588fca1d6a19db9fa7e02e50f279308afabb9.html">Crear un nuevo usuario exitosamente </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-06-2026 17:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Crear Un Nuevo Usuario </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario Administrador de AlmaSoft autenticado<br />
+Quiero crear un nuevo usuario<br />
+Para registrar usuarios en el sistema
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="7befd731f0453d4c40be0a312503ce8725656b1add5e4a2097cad1c0079f9729.html">Crear Usuario
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crear un nuevo usuario exitosamente
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" Dado que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft" width="1925"/>
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" Usuario abrir pagina" width="1925"/>
+                <img src="13787efdfb9f7fbe6746cccdd093ec86f60e704afe7fade85d6acbcaff407de9.png" title=" usuario opens the Inicio" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" usuario clicks on Boton ir a login" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" Usuario abrir pagina (completed)" width="1925"/>
+                <img src="08cf69c525ff82d24107a2cec96deee43aa64715ab3316bc29fce1acc1fb6bfa.png" title=" Dado que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft (completed)" width="1925"/>
+                <img src="da9eda4a5102d133690e38ad5e4ee51d4459fe2352cef279ad2095cefb62d669.png" title=" Cuando ingrese las credenciales correctas (Correo electronico y contrase&ntilde;a)
+| correo | contrasena |
+| admin@gmail.com | 123456 |" width="1925"/>
+                <img src="da9eda4a5102d133690e38ad5e4ee51d4459fe2352cef279ad2095cefb62d669.png" title=" Usuario autenticarse" width="1925"/>
+                <img src="da9eda4a5102d133690e38ad5e4ee51d4459fe2352cef279ad2095cefb62d669.png" title=" usuario clicks on Correo" width="1925"/>
+                <img src="75af35bc835b190e356535942cfdfc3a20c8dbd680a6c314aaf305033bf4f170.png" title=" usuario enters 'admin@gmail.com' into Correo" width="1925"/>
+                <img src="e0ad8c3bf765878403e5d7c1dbde6d0a6bb803f628be238a97ca4aeb1193b0ca.png" title=" usuario clicks on Contrase&ntilde;a" width="1925"/>
+                <img src="c67fb30ae92a747ca19d22153633b6f4a759079bada5d977d587569d5062394a.png" title=" usuario enters '123456' into Contrase&ntilde;a" width="1925"/>
+                <img src="deaa37ff6b91ebe944aae575b1520be057bec858aba1bc6b53c60d32fb959e55.png" title=" usuario clicks on Boton enviar login" width="1925"/>
+                <img src="deaa37ff6b91ebe944aae575b1520be057bec858aba1bc6b53c60d32fb959e55.png" title=" Usuario autenticarse (completed)" width="1925"/>
+                <img src="deaa37ff6b91ebe944aae575b1520be057bec858aba1bc6b53c60d32fb959e55.png" title=" Cuando ingrese las credenciales correctas (Correo electronico y contrase&ntilde;a)
+| correo | contrasena |
+| admin@gmail.com | 123456 | (completed)" width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Entonces se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina." width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Then validacion login admin" width="1925"/>
+                <img src="26df9bc36b031f05bb09c036cfb2e623753382073b3d9746d3c2ca5b9b38c950.png" title=" Entonces se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina. (completed)" width="1925"/>
+                <img src="8307c7653dec06ab262090a180c0d56fe028a83ffd9966a5a879ecef6bbdbe67.png" title=" Cuando ingrese al m&oacute;dulo de usuarios" width="1925"/>
+                <img src="8307c7653dec06ab262090a180c0d56fe028a83ffd9966a5a879ecef6bbdbe67.png" title=" Usuario abrir modulo usuarios" width="1925"/>
+                <img src="8307c7653dec06ab262090a180c0d56fe028a83ffd9966a5a879ecef6bbdbe67.png" title=" usuario clicks on Bot&oacute;n usuarios" width="1925"/>
+                <img src="8307c7653dec06ab262090a180c0d56fe028a83ffd9966a5a879ecef6bbdbe67.png" title=" Usuario abrir modulo usuarios (completed)" width="1925"/>
+                <img src="8307c7653dec06ab262090a180c0d56fe028a83ffd9966a5a879ecef6bbdbe67.png" title=" Cuando ingrese al m&oacute;dulo de usuarios (completed)" width="1925"/>
+                <img src="63a2232f09197804258c9bd3ac22e02e515088f727f45d0472a5f61d1a96d2ec.png" title=" Y diligencie el formulario con los datos v&aacute;lidos del usuario
+| rol | primerNombre | segundoNombre | primerApellido | segundoApellido | direccion | contrasena |
+| Asesor | usuario | test | test | test | Calle 1 | 123456 |" width="1925"/>
+                <img src="63a2232f09197804258c9bd3ac22e02e515088f727f45d0472a5f61d1a96d2ec.png" title=" Usuario crear usuario" width="1925"/>
+                <img src="63a2232f09197804258c9bd3ac22e02e515088f727f45d0472a5f61d1a96d2ec.png" title=" usuario clicks on Bot&oacute;n agregar usuario" width="1925"/>
+                <img src="d829423ff79f0bf2068eab1f8ab0e029675bd2871209a7fd4691fdba712a76bb.png" title=" usuario select Asesor on Lista rol" width="1925"/>
+                <img src="399272fef0309358abbfa7278364d5aa650e1dac9ea35f975e4355e9de598960.png" title=" usuario enters '616032192' into Campo documento" width="1925"/>
+                <img src="17ff7994a8f255dad2ee65ce794cb0b4b990564d36c3f1e950c6b61e542a6c09.png" title=" usuario enters 'usuario' into Campo primer nombre" width="1925"/>
+                <img src="4fdf9ff3898bac9fdb5af7fa36f1dfc9ee8f9b024c639b27ce214b1481d86580.png" title=" usuario enters 'test' into Campo segundo nombre" width="1925"/>
+                <img src="80e5d6a6591ec2945ed8da38dc0c54efad5a6b21a9cbc17cfb64278e9fc71095.png" title=" usuario enters 'test' into Campo primer apellido" width="1925"/>
+                <img src="11113e842bbed20df358715c072330e1204ef0a604d7149310d8cff0ad28d32d.png" title=" usuario enters 'test' into Campo segundo apellido" width="1925"/>
+                <img src="69b30d0adb7f8a11a5a4dd3c126e61b458de571461bc6379ab2c65fecedb817b.png" title=" usuario enters 'Calle 1' into Campo direcci&oacute;n" width="1925"/>
+                <img src="f0cbb40f56fd8df0b39d296dfdf7ef1d516070e23a608ef592d07287aa12f254.png" title=" usuario enters '3941815509' into Campo tel&eacute;fono" width="1925"/>
+                <img src="41240a41180dc13b43188e59763d5ef1fba9e885634f23e683cbe05ce1d94d54.png" title=" usuario enters 'usuario1782426325857@gmail.com' into Campo correo" width="1925"/>
+                <img src="8d8a292c2202537100fd684df8168d99434d4b599eb061db707cfc53f05bf339.png" title=" usuario enters '123456' into Campo contrase&ntilde;a" width="1925"/>
+                <img src="f260a18abb2a473c5bb4be66e9ff15c4a1dd17cab103b1fa0dc7273634c715d0.png" title=" usuario clicks on Bot&oacute;n guardar" width="1925"/>
+                <img src="f260a18abb2a473c5bb4be66e9ff15c4a1dd17cab103b1fa0dc7273634c715d0.png" title=" Usuario crear usuario (completed)" width="1925"/>
+                <img src="f260a18abb2a473c5bb4be66e9ff15c4a1dd17cab103b1fa0dc7273634c715d0.png" title=" Y diligencie el formulario con los datos v&aacute;lidos del usuario
+| rol | primerNombre | segundoNombre | primerApellido | segundoApellido | direccion | contrasena |
+| Asesor | usuario | test | test | test | Calle 1 | 123456 | (completed)" width="1925"/>
+                <img src="f260a18abb2a473c5bb4be66e9ff15c4a1dd17cab103b1fa0dc7273634c715d0.png" title=" Entonces el sistema deber&aacute; mostrar el mensaje &quot;Usuario creado correctamente&quot;: <span class='success-color'>SUCCESS</span>" width="1925"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.1</span>
+</div>
+</body>
+</html>

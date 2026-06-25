@@ -1,12 +1,12 @@
 [
   {
-    "line": 4,
+    "line": 3,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 84656500,
+              "duration": 57491500,
               "status": "passed"
             },
             "match": {
@@ -14,34 +14,34 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Verificar el inicio de sesion exitoso en el sistema",
+        "line": 10,
+        "name": "Verificar la autenticacion exitosa en la pagina de AlmaSoft",
         "description": "",
-        "id": "autenticacion-en-el-sistema-funerario;verificar-el-inicio-de-sesion-exitoso-en-el-sistema;;2",
+        "id": "autenticar-en-la-pagina-de-almasoft;verificar-la-autenticacion-exitosa-en-la-pagina-de-almasoft",
         "type": "scenario",
-        "keyword": "Esquema del escenario",
+        "keyword": "Escenario",
         "steps": [
           {
             "result": {
-              "duration": 7130797600,
+              "duration": 11332883500,
               "status": "passed"
             },
             "line": 11,
-            "name": "que el cliente se encuentra en la pagina de inicio de sesion",
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
             "match": {
-              "location": "LoginStepDefinition.queElClienteSeEncuentraEnLaPaginaDeInicioDeSesion()"
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 4851467300,
+              "duration": 6406293200,
               "status": "passed"
             },
             "line": 12,
-            "name": "el cliente ingresa sus credenciales",
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
             "match": {
-              "location": "LoginStepDefinition.elClienteIngresaSusCredenciales(CredencialesInicioSesion\u003e)"
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
             },
             "rows": [
               {
@@ -52,8 +52,8 @@
               },
               {
                 "cells": [
-                  "maicol777@gmail.com",
-                  "123456789"
+                  "admin@gmail.com",
+                  "123456"
                 ]
               }
             ],
@@ -61,41 +61,675 @@
           },
           {
             "result": {
-              "duration": 922981400,
+              "duration": 460317200,
               "status": "passed"
             },
-            "line": 15,
-            "name": "el sistema valida las credenciales",
+            "line": 17,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
             "match": {
-              "location": "LoginStepDefinition.elSistemaValidaLasCredenciales()"
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
             },
             "keyword": "Entonces "
-          },
-          {
-            "result": {
-              "duration": 5163800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "redirige al panel del cliente",
-            "match": {
-              "location": "LoginStepDefinition.redirigeAlPanelDelCliente()"
-            },
-            "keyword": "Y "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@autenticacion"
           }
         ]
       }
     ],
-    "name": "Autenticacion en el sistema funerario",
-    "description": "  Como cliente registrado\n  Quiero iniciar sesion en el sistema\n  Para acceder al contenido y funcionalidades disponibles en mi cuenta",
-    "id": "autenticacion-en-el-sistema-funerario",
+    "name": "Autenticar en la pagina de AlmaSoft",
+    "description": "  Como usuario de AlmaSoft\n  Quiero autenticar en el portal de AlmaSoft\nPara poder acceder al contenido y funcionalidades disponibles segun mi rol y cuenta.",
+    "id": "autenticar-en-la-pagina-de-almasoft",
     "keyword": "Característica",
-    "uri": "src/test/resources/features/02_Cliente/02_IniciarSesion.feature",
+    "uri": "src/test/resources/features/01_Administrador/01-iniciarsesion.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 4558057700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6927539200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Correo",
+                  "Contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 241075900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3635400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Crear un nuevo producto exitosamente",
+        "description": "",
+        "id": "crear-un-nuevo-producto;crear-un-nuevo-producto-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 636363400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "ingrese al módulo de productos",
+            "match": {
+              "location": "CrearProductoStepDefinitions.ingreseAlModuloDeProductos()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 6106599200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "diligencie el formulario con los datos válidos del producto",
+            "match": {
+              "location": "CrearProductoStepDefinitions.diligencieElFormularioConLosDatosValidosDelProducto(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "descripcion",
+                  "precio",
+                  "stock",
+                  "estado",
+                  "rutaImagen",
+                  "categoria",
+                  "subcategoria"
+                ]
+              },
+              {
+                "cells": [
+                  "Ataud Clasico",
+                  "Ataud hecho en madera de roble",
+                  "400000",
+                  "20",
+                  "Activo",
+                  "/img/AtaudClasico.jpg",
+                  "Ataud",
+                  "Tamaño-Mediano"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 1994300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "el sistema debe mostrar el mensaje \"Producto creado exitosamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Producto creado exitosamente",
+                  "offset": 36
+                }
+              ],
+              "location": "CrearProductoStepDefinitions.elSistemaDebeMostrarElMensaje(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@crearProducto"
+          }
+        ]
+      }
+    ],
+    "name": "Crear un nuevo producto",
+    "description": "  Como usuario Administrador de AlmaSoft autenticado\n  Quiero crear un nuevo producto\n  Para tener más variedad de productos en la plataforma",
+    "id": "crear-un-nuevo-producto",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/02-CrearProducto.feature",
+    "tags": []
+  },
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 4247069400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3349194800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 230033300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4028200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Actualizar un producto exitosamente",
+        "description": "",
+        "id": "actualizar-un-producto;actualizar-un-producto-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 441808700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "ingrese al módulo de productos",
+            "match": {
+              "location": "CrearProductoStepDefinitions.ingreseAlModuloDeProductos()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 1548032100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "seleccione el producto \"Ataud Premiun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ataud Premiun",
+                  "offset": 24
+                }
+              ],
+              "location": "ActualizarProductoStepDefinitions.seleccioneElProducto(String)"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 1729014900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "actualice los datos del producto",
+            "match": {
+              "location": "ActualizarProductoStepDefinitions.actualiceLosDatosDelProducto(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "precio",
+                  "stock"
+                ]
+              },
+              {
+                "cells": [
+                  "450000",
+                  "20"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 3677900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "el sistema deberá mostrar el mensaje \"Producto actualizado correctamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Producto actualizado correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CrearUsuarioStepDefinitions.elSistemaDeberaMostrarElMensaje(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@actualizarProducto"
+          }
+        ]
+      }
+    ],
+    "name": "Actualizar un producto",
+    "description": "  Como usuario Administrador de AlmaSoft autenticado\n  Quiero actualizar la información de un producto\n  Para mantener los datos actualizados de los productos",
+    "id": "actualizar-un-producto",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/03-ActualizarProducto.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 4395811600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3286263400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Correo",
+                  "Contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 186438100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1425100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Crear una nueva categoria exitosamente",
+        "description": "",
+        "id": "crear-una-nueva-categoria;crear-una-nueva-categoria-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 447424800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "ingrese al modulo categorias",
+            "match": {
+              "location": "CrearCategoriaStepDefinitions.ingreseAlModuloCategorias()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 1250093000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "diligencie el formulario con datos validos de la categoria",
+            "match": {
+              "location": "CrearCategoriaStepDefinitions.diligencieElFormularioConDatosValidosDeLaCategoria(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombre"
+                ]
+              },
+              {
+                "cells": [
+                  "Categoria 1"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 1847500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "el sistema debera mostrar el mensaje \"Categoria creada correctamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Categoria creada correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CrearCategoriaStepDefinitions.elSistemaDeberaMostrarElMensaje(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@crearCategoria"
+          }
+        ]
+      }
+    ],
+    "name": "Crear una nueva categoria",
+    "description": "    Como usuario Administrador de AlmaSoft autenticado\n  Quiero crear una nueva categoria",
+    "id": "crear-una-nueva-categoria",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/04-CrearCategoria.feature",
+    "tags": []
+  },
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 4679826100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3729682200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 258811300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4383700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Crear un nuevo usuario exitosamente",
+        "description": "",
+        "id": "crear-un-nuevo-usuario;crear-un-nuevo-usuario-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 396579000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "ingrese al módulo de usuarios",
+            "match": {
+              "location": "CrearUsuarioStepDefinitions.ingreseAlModuloDeUsuarios()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 5118332700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "diligencie el formulario con los datos válidos del usuario",
+            "match": {
+              "location": "CrearUsuarioStepDefinitions.diligencieElFormularioConLosDatosValidosDelUsuario(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rol",
+                  "primerNombre",
+                  "segundoNombre",
+                  "primerApellido",
+                  "segundoApellido",
+                  "direccion",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "Asesor",
+                  "usuario",
+                  "test",
+                  "test",
+                  "test",
+                  "Calle 1",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 3274300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "el sistema deberá mostrar el mensaje \"Usuario creado correctamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Usuario creado correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CrearUsuarioStepDefinitions.elSistemaDeberaMostrarElMensaje(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@crearUsuario"
+          }
+        ]
+      }
+    ],
+    "name": "Crear un nuevo usuario",
+    "description": "  Como usuario Administrador de AlmaSoft autenticado\n  Quiero crear un nuevo usuario\n  Para registrar usuarios en el sistema",
+    "id": "crear-un-nuevo-usuario",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/05-CrearUsuario.feature",
     "tags": []
   }
 ]

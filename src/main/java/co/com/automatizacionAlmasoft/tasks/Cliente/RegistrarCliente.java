@@ -1,6 +1,6 @@
 package co.com.automatizacionAlmasoft.tasks.Cliente;
 
-import co.com.automatizacionAlmasoft.Models.DatosRegistro;
+import co.com.automatizacionAlmasoft.models.DatosRegistro;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

@@ -1,6 +1,6 @@
 package co.com.automatizacionAlmasoft.stepsdefinitions.Cliente;
 
-import co.com.automatizacionAlmasoft.Models.PagoPlanData;
+import co.com.automatizacionAlmasoft.models.PagoPlanData;
 
 import co.com.automatizacionAlmasoft.questions.Cliente.ValidacionPago;
 

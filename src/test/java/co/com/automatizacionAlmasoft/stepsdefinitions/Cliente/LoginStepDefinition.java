@@ -1,8 +1,8 @@
 package co.com.automatizacionAlmasoft.stepsdefinitions.Cliente;
 
-import co.com.automatizacionAlmasoft.Models.CredencialesInicioSesion;
+import co.com.automatizacionAlmasoft.models.CredencialesInicioSesion;
 import co.com.automatizacionAlmasoft.questions.Cliente.ValidacionLogin;
-import co.com.automatizacionAlmasoft.tasks.Cliente.AbrirPagina;
+import co.com.automatizacionAlmasoft.tasks.AbrirPagina;
 import co.com.automatizacionAlmasoft.tasks.Cliente.Autenticarse;
 
 import cucumber.api.java.es.Dado;
