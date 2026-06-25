@@ -1,12 +1,12 @@
 [
   {
-    "line": 4,
+    "line": 3,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 84656500,
+              "duration": 93192200,
               "status": "passed"
             },
             "match": {
@@ -14,34 +14,34 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Verificar el inicio de sesion exitoso en el sistema",
+        "line": 5,
+        "name": "Registrar pago exitoso",
         "description": "",
-        "id": "autenticacion-en-el-sistema-funerario;verificar-el-inicio-de-sesion-exitoso-en-el-sistema;;2",
+        "id": "pago-de-plan-funerario;registrar-pago-exitoso",
         "type": "scenario",
-        "keyword": "Esquema del escenario",
+        "keyword": "Escenario",
         "steps": [
           {
             "result": {
-              "duration": 7130797600,
+              "duration": 7290760700,
               "status": "passed"
             },
-            "line": 11,
-            "name": "que el cliente se encuentra en la pagina de inicio de sesion",
+            "line": 7,
+            "name": "que el cliente se encuentra en el modulo de inicio de sesion",
             "match": {
-              "location": "LoginStepDefinition.queElClienteSeEncuentraEnLaPaginaDeInicioDeSesion()"
+              "location": "PlanFunebreStepDefinition.queElClienteSeEncuentraEnElModuloDeInicioDeSesion()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 4851467300,
+              "duration": 4895267400,
               "status": "passed"
             },
-            "line": 12,
-            "name": "el cliente ingresa sus credenciales",
+            "line": 9,
+            "name": "el cliente inicia sesion para adquirir un plan",
             "match": {
-              "location": "LoginStepDefinition.elClienteIngresaSusCredenciales(CredencialesInicioSesion\u003e)"
+              "location": "PlanFunebreStepDefinition.elClienteIniciaSesionParaAdquirirUnPlan(CredencialesInicioSesion\u003e)"
             },
             "rows": [
               {
@@ -61,41 +61,60 @@
           },
           {
             "result": {
-              "duration": 922981400,
+              "duration": 2087986800,
               "status": "passed"
             },
-            "line": 15,
-            "name": "el sistema valida las credenciales",
+            "line": 13,
+            "name": "selecciona un plan funerario",
             "match": {
-              "location": "LoginStepDefinition.elSistemaValidaLasCredenciales()"
+              "location": "PlanFunebreStepDefinition.seleccionaUnPlanFunerario()"
             },
-            "keyword": "Entonces "
+            "keyword": "Y "
           },
           {
             "result": {
-              "duration": 5163800,
+              "duration": 4980817100,
               "status": "passed"
             },
-            "line": 16,
-            "name": "redirige al panel del cliente",
+            "line": 15,
+            "name": "registra el pago",
             "match": {
-              "location": "LoginStepDefinition.redirigeAlPanelDelCliente()"
+              "location": "PagoPlanStepDefinition.registraElPago(PagoPlanData\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "metodoPago"
+                ]
+              },
+              {
+                "cells": [
+                  "PSE"
+                ]
+              }
+            ],
             "keyword": "Y "
-          }
-        ],
-        "tags": [
+          },
           {
-            "name": "@login"
+            "result": {
+              "duration": 579815400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "muestra el plan adquirido",
+            "match": {
+              "location": "PagoPlanStepDefinition.muestraElPlanAdquirido()"
+            },
+            "keyword": "Entonces "
           }
         ]
       }
     ],
-    "name": "Autenticacion en el sistema funerario",
-    "description": "  Como cliente registrado\n  Quiero iniciar sesion en el sistema\n  Para acceder al contenido y funcionalidades disponibles en mi cuenta",
-    "id": "autenticacion-en-el-sistema-funerario",
+    "name": "Pago de plan funerario",
+    "description": "",
+    "id": "pago-de-plan-funerario",
     "keyword": "Característica",
-    "uri": "src/test/resources/features/02_Cliente/02_IniciarSesion.feature",
+    "uri": "src/test/resources/features/02_Cliente/04_PagoPlan.feature",
     "tags": []
   }
 ]

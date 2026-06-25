@@ -1,5 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Registro de usuario funerario","Registro exitoso de cliente","SUCCESS","2026-05-31T10:51:45.289362-05:00[America/Bogota]","0.0","28.09"
+"Registro de usuario funerario","Registro exitoso de cliente","ERROR","2026-06-24T19:20:02.3155456-05:00[America/Bogota]","0.0","15.98"
 "Autenticacion en el sistema funerario","Verificar el inicio de sesion exitoso en el sistema","SUCCESS","2026-06-23T17:58:36.4803275-05:00[America/Bogota]","0.0","14.25"
-"Selección de plan funerario","Seleccionar plan funerario","SUCCESS","2026-06-03T19:30:53.8703637-05:00[America/Bogota]","0.0","17.79"
-"Pago de plan funerario","Registrar pago exitoso","SUCCESS","2026-06-01T19:04:30.7092468-05:00[America/Bogota]","0.0","23.94"
+"Selección de plan funerario","Seleccionar plan funerario","SUCCESS","2026-06-24T19:21:14.0465913-05:00[America/Bogota]","0.0","15.45"
+"Pago de plan funerario","Registrar pago exitoso","SUCCESS","2026-06-24T19:21:45.1955124-05:00[America/Bogota]","0.0","20.18"
