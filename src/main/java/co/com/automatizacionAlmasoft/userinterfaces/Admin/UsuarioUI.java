@@ -49,4 +49,39 @@ public class UsuarioUI {
             Target.the("Mensaje usuario creado")
                     .located(By.xpath("//*[contains(text(),'Datos enviados')]"));
 
+    // LISTADO
+    public static final Target INPUT_BUSCAR =
+            Target.the("Buscar usuario")
+                    .located(By.xpath("//input[@placeholder='Buscar por documento']"));
+
+    public static final Target BTN_ACCIONES =
+            Target.the("Botón acciones")
+                    .located(By.xpath("//button[contains(.,'Acciones')]"));
+
+    public static final Target BTN_EDITAR =
+            Target.the("Botón editar")
+                    .located(By.xpath("//a[contains(@href,'/usuarios/EditarUsuario/')]"));
+
+    public static final Target BTN_PRIMER_ACCIONES =
+            Target.the("Botón acciones del primer usuario")
+                    .located(By.xpath("(//button[contains(.,'Acciones')])[1]"));
+
+    public static final Target BTN_ELIMINAR =
+            Target.the("Opción eliminar")
+                    .located(By.xpath("//a[contains(.,'Eliminar')]"));
+
+    // FORMULARIO EDITAR
+
+    public static final Target EDIT_TELEFONO =
+            Target.the("Telefono")
+                    .located(By.name("telefono"));
+
+    public static final Target EDIT_DIRECCION =
+            Target.the("Direccion")
+                    .located(By.name("direccion"));
+
+    public static final Target BTN_GUARDAR_EDICION =
+            Target.the("Guardar edición")
+                    .located(By.xpath("//button[@type='submit']"));
 }
+

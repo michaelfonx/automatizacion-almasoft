@@ -9,4 +9,6 @@ public class DatosDinamicos {
     public static String nombreProducto;
     public static String descripcionProducto;
     public static String precioProducto;
+
+    public static String nombreSubcategoria;
 }

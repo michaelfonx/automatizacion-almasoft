@@ -1,4 +1,4 @@
-package co.com.automatizacionAlmasoft.stepsdefinitions.Administrador;
+package co.com.automatizacionAlmasoft.stepsdefinitions.Cliente;
 
 import co.com.automatizacionAlmasoft.models.DatosEditarCliente;
 import co.com.automatizacionAlmasoft.tasks.Admin.ActualizarPerfil;

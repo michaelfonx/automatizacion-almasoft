@@ -36,4 +36,10 @@ public class GeneradorDatos {
                 10000 + new Random().nextInt(500000)
         );
     }
+
+    public static String nombreSubcategoria() {
+        return "SubCategoria_" + System.currentTimeMillis();
+    }
+
+
 }

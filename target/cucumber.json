@@ -6,11 +6,7 @@
         "before": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 57491500,
-=======
-              "duration": 93192200,
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
+              "duration": 99901900,
               "status": "passed"
             },
             "match": {
@@ -18,61 +14,34 @@
             }
           }
         ],
-<<<<<<< HEAD
         "line": 10,
         "name": "Verificar la autenticacion exitosa en la pagina de AlmaSoft",
         "description": "",
         "id": "autenticar-en-la-pagina-de-almasoft;verificar-la-autenticacion-exitosa-en-la-pagina-de-almasoft",
-=======
-        "line": 5,
-        "name": "Registrar pago exitoso",
-        "description": "",
-        "id": "pago-de-plan-funerario;registrar-pago-exitoso",
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
         "type": "scenario",
         "keyword": "Escenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 11332883500,
+              "duration": 14489909800,
               "status": "passed"
             },
             "line": 11,
             "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
             "match": {
               "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
-=======
-              "duration": 7290760700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "que el cliente se encuentra en el modulo de inicio de sesion",
-            "match": {
-              "location": "PlanFunebreStepDefinition.queElClienteSeEncuentraEnElModuloDeInicioDeSesion()"
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
             },
             "keyword": "Dado "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 6406293200,
+              "duration": 9337747000,
               "status": "passed"
             },
             "line": 12,
             "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
             "match": {
               "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
-=======
-              "duration": 4895267400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "el cliente inicia sesion para adquirir un plan",
-            "match": {
-              "location": "PlanFunebreStepDefinition.elClienteIniciaSesionParaAdquirirUnPlan(CredencialesInicioSesion\u003e)"
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
             },
             "rows": [
               {
@@ -92,8 +61,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 460317200,
+              "duration": 543061400,
               "status": "passed"
             },
             "line": 17,
@@ -107,58 +75,10 @@
         "tags": [
           {
             "name": "@autenticacion"
-=======
-              "duration": 2087986800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "selecciona un plan funerario",
-            "match": {
-              "location": "PlanFunebreStepDefinition.seleccionaUnPlanFunerario()"
-            },
-            "keyword": "Y "
-          },
-          {
-            "result": {
-              "duration": 4980817100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "registra el pago",
-            "match": {
-              "location": "PagoPlanStepDefinition.registraElPago(PagoPlanData\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "metodoPago"
-                ]
-              },
-              {
-                "cells": [
-                  "PSE"
-                ]
-              }
-            ],
-            "keyword": "Y "
-          },
-          {
-            "result": {
-              "duration": 579815400,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "muestra el plan adquirido",
-            "match": {
-              "location": "PagoPlanStepDefinition.muestraElPlanAdquirido()"
-            },
-            "keyword": "Entonces "
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
           }
         ]
       }
     ],
-<<<<<<< HEAD
     "name": "Autenticar en la pagina de AlmaSoft",
     "description": "  Como usuario de AlmaSoft\n  Quiero autenticar en el portal de AlmaSoft\nPara poder acceder al contenido y funcionalidades disponibles segun mi rol y cuenta.",
     "id": "autenticar-en-la-pagina-de-almasoft",
@@ -178,7 +98,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4558057700,
+              "duration": 9139180000,
               "status": "passed"
             },
             "line": 10,
@@ -190,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 6927539200,
+              "duration": 8479158200,
               "status": "passed"
             },
             "line": 11,
@@ -216,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 241075900,
+              "duration": 313094300,
               "status": "passed"
             },
             "line": 16,
@@ -232,7 +152,7 @@
         "before": [
           {
             "result": {
-              "duration": 3635400,
+              "duration": 6020200,
               "status": "passed"
             },
             "match": {
@@ -249,7 +169,7 @@
         "steps": [
           {
             "result": {
-              "duration": 636363400,
+              "duration": 888356200,
               "status": "passed"
             },
             "line": 21,
@@ -261,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 6106599200,
+              "duration": 8667351900,
               "status": "passed"
             },
             "line": 22,
@@ -299,7 +219,7 @@
           },
           {
             "result": {
-              "duration": 1994300,
+              "duration": 5256500,
               "status": "passed"
             },
             "line": 27,
@@ -342,7 +262,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4247069400,
+              "duration": 8698645000,
               "status": "passed"
             },
             "line": 12,
@@ -354,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 3349194800,
+              "duration": 8258803600,
               "status": "passed"
             },
             "line": 13,
@@ -380,7 +300,7 @@
           },
           {
             "result": {
-              "duration": 230033300,
+              "duration": 271988000,
               "status": "passed"
             },
             "line": 19,
@@ -396,7 +316,7 @@
         "before": [
           {
             "result": {
-              "duration": 4028200,
+              "duration": 26247900,
               "status": "passed"
             },
             "match": {
@@ -413,7 +333,7 @@
         "steps": [
           {
             "result": {
-              "duration": 441808700,
+              "duration": 919286300,
               "status": "passed"
             },
             "line": 25,
@@ -425,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 1548032100,
+              "duration": 3638763900,
               "status": "passed"
             },
             "line": 27,
@@ -443,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 1729014900,
+              "duration": 3969413600,
               "status": "passed"
             },
             "line": 29,
@@ -469,7 +389,7 @@
           },
           {
             "result": {
-              "duration": 3677900,
+              "duration": 5545800,
               "status": "passed"
             },
             "line": 34,
@@ -512,7 +432,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4395811600,
+              "duration": 6650111400,
               "status": "passed"
             },
             "line": 10,
@@ -524,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 3286263400,
+              "duration": 9129620700,
               "status": "passed"
             },
             "line": 11,
@@ -550,7 +470,7 @@
           },
           {
             "result": {
-              "duration": 186438100,
+              "duration": 305950600,
               "status": "passed"
             },
             "line": 16,
@@ -566,7 +486,7 @@
         "before": [
           {
             "result": {
-              "duration": 1425100,
+              "duration": 3254000,
               "status": "passed"
             },
             "match": {
@@ -583,7 +503,7 @@
         "steps": [
           {
             "result": {
-              "duration": 447424800,
+              "duration": 672621900,
               "status": "passed"
             },
             "line": 21,
@@ -595,7 +515,7 @@
           },
           {
             "result": {
-              "duration": 1250093000,
+              "duration": 1982918700,
               "status": "passed"
             },
             "line": 22,
@@ -619,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 1847500,
+              "duration": 4136600,
               "status": "passed"
             },
             "line": 27,
@@ -662,7 +582,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4679826100,
+              "duration": 7618522600,
               "status": "passed"
             },
             "line": 12,
@@ -674,7 +594,7 @@
           },
           {
             "result": {
-              "duration": 3729682200,
+              "duration": 8664171700,
               "status": "passed"
             },
             "line": 13,
@@ -700,7 +620,7 @@
           },
           {
             "result": {
-              "duration": 258811300,
+              "duration": 413873500,
               "status": "passed"
             },
             "line": 18,
@@ -716,7 +636,7 @@
         "before": [
           {
             "result": {
-              "duration": 4383700,
+              "duration": 2061200,
               "status": "passed"
             },
             "match": {
@@ -733,7 +653,7 @@
         "steps": [
           {
             "result": {
-              "duration": 396579000,
+              "duration": 696136400,
               "status": "passed"
             },
             "line": 24,
@@ -745,7 +665,7 @@
           },
           {
             "result": {
-              "duration": 5118332700,
+              "duration": 12185279500,
               "status": "passed"
             },
             "line": 26,
@@ -781,7 +701,7 @@
           },
           {
             "result": {
-              "duration": 3274300,
+              "duration": 2943800,
               "status": "passed"
             },
             "line": 31,
@@ -810,13 +730,617 @@
     "id": "crear-un-nuevo-usuario",
     "keyword": "Característica",
     "uri": "src/test/resources/features/01_Administrador/05-CrearUsuario.feature",
-=======
-    "name": "Pago de plan funerario",
-    "description": "",
-    "id": "pago-de-plan-funerario",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 6022754200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 8676320100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 280580700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4311700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Editar un usuario exitosamente",
+        "description": "",
+        "id": "editar-usuario;editar-un-usuario-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 641262400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "ingrese al módulo de usuarios",
+            "match": {
+              "location": "CrearUsuarioStepDefinitions.ingreseAlModuloDeUsuarios()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2862263900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "seleccione el usuario",
+            "match": {
+              "location": "EditarUsuarioStepDefinitions.seleccioneElUsuario()"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 4157212800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "actualice los datos del usuario",
+            "match": {
+              "location": "EditarUsuarioStepDefinitions.actualiceLosDatosDelUsuario(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "telefono",
+                  "direccion"
+                ]
+              },
+              {
+                "cells": [
+                  "3201112233",
+                  "Calle 100"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 5661000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "el sistema deberá mostrar el mensaje \"Usuario actualizado correctamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Usuario actualizado correctamente",
+                  "offset": 38
+                }
+              ],
+              "location": "CrearUsuarioStepDefinitions.elSistemaDeberaMostrarElMensaje(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@editarUsuario"
+          }
+        ]
+      }
+    ],
+    "name": "Editar usuario",
+    "description": "  Como administrador autenticado\n  Quiero editar un usuario\n  Para actualizar su información",
+    "id": "editar-usuario",
     "keyword": "Característica",
-    "uri": "src/test/resources/features/02_Cliente/04_PagoPlan.feature",
->>>>>>> e3d9c1d9f2787c7f4f79287ae69befc4590c9ed2
+    "uri": "src/test/resources/features/01_Administrador/06-EditarUsuario.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 6526827500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 9055014700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 305802900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3251200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Eliminar un usuario exitosamente",
+        "description": "",
+        "id": "eliminar-un-usuario;eliminar-un-usuario-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 643770600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "ingrese al módulo de usuarios",
+            "match": {
+              "location": "CrearUsuarioStepDefinitions.ingreseAlModuloDeUsuarios()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 1616237500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "seleccione el usuario a eliminar",
+            "match": {
+              "location": "EliminarUsuarioStepDefinitions.seleccioneElUsuarioAEliminar()"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 243947500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "el usuario deberá eliminarse correctamente",
+            "match": {
+              "location": "EliminarUsuarioStepDefinitions.elUsuarioDeberaEliminarseCorrectamente()"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@eliminarUsuario"
+          }
+        ]
+      }
+    ],
+    "name": "Eliminar un usuario",
+    "description": "  Como administrador autenticado\n  Quiero eliminar un usuario\n  Para eliminar registros del sistema",
+    "id": "eliminar-un-usuario",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/07-EliminarUsuario.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 6383181400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 12169587800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 308458100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8995400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Crear una subcategoría exitosamente",
+        "description": "",
+        "id": "crear-una-subcategoría;crear-una-subcategoría-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 938916800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "ingrese al módulo de subcategorías",
+            "match": {
+              "location": "CrearSubcategoriaStepDefinitions.ingreseAlModuloDeSubcategorias()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 3586498200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "diligencie los datos de la subcategoría",
+            "match": {
+              "location": "CrearSubcategoriaStepDefinitions.diligencieLosDatosDeLaSubcategoria(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "categoria",
+                  "nombre"
+                ]
+              },
+              {
+                "cells": [
+                  "Ataud",
+                  "Demo"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 269397300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "el sistema deberá mostrar el mensaje de subcategoría \"Subcategoría creada correctamente\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subcategoría creada correctamente",
+                  "offset": 54
+                }
+              ],
+              "location": "CrearSubcategoriaStepDefinitions.elSistemaDeberaMostrarElMensajeDeSubcategoria(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@crearSubcategoria"
+          }
+        ]
+      }
+    ],
+    "name": "Crear una subcategoría",
+    "description": "  Como usuario Administrador de AlmaSoft autenticado\n  Quiero crear una nueva subcategoría\n  Para registrar nuevas subcategorías en el sistema",
+    "id": "crear-una-subcategoría",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/08-CrearSubcategoria.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Antecedentes",
+        "steps": [
+          {
+            "result": {
+              "duration": 5914357900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que el usuario se encuentra en la pagina de inicio de sesion de AlmaSoft",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.queElUsuarioSeEncuentraEnLaPaginaDeInicioDeSesionDeAlmaSoft()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 9803469400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ingrese las credenciales correctas (Correo electronico y contraseña)",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.ingreseLasCredencialesCorrectas(CredencialesInicioSesion\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "correo",
+                  "contrasena"
+                ]
+              },
+              {
+                "cells": [
+                  "admin@gmail.com",
+                  "123456"
+                ]
+              }
+            ],
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 293448600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "se debe verificar que el usuario haya sido autenticado correctamente y redirigido a su pagina.",
+            "match": {
+              "location": "LoginAdministradorStepDefinition.seDebeVerificarQueElUsuarioHayaSidoAutenticadoCorrectamenteYRedirigidoASuPagina()"
+            },
+            "keyword": "Entonces "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4703000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PreparacionEscenario.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Actualizar una subcategoría exitosamente",
+        "description": "",
+        "id": "actualizar-una-subcategoría;actualizar-una-subcategoría-exitosamente",
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 928902800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "ingrese al módulo de subcategorías",
+            "match": {
+              "location": "CrearSubcategoriaStepDefinitions.ingreseAlModuloDeSubcategorias()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@placeholder\u003d\u0027Buscar\u0027]\"}\n  (Session info: chrome\u003d149.0.7827.115)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ESTEFANIA12\u0027, ip: \u0027172.30.128.118\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 148.0.7778.96 (8625e066febc..., userDataDir: C:\\Users\\estef\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61643}, goog:processID: 11536, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 7034f0ec73121c9d0de5b239e083010c\n*** Element info: {Using\u003dxpath, value\u003d//input[@placeholder\u003d\u0027Buscar\u0027]}\r\n\tat net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)\r\n\tat net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)\r\n\tat net.serenitybdd.screenplay.Actor.should(Actor.java:316)\r\n\tat net.serenitybdd.screenplay.waits.WaitUntilBuilder$1.performAs(WaitUntilBuilder.java:29)\r\n\tat net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)\r\n\tat net.serenitybdd.screenplay.Actor.perform(Actor.java:229)\r\n\tat net.serenitybdd.screenplay.Actor.performSilently(Actor.java:209)\r\n\tat net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)\r\n\tat co.com.automatizacionAlmasoft.tasks.Admin.SeleccionarSubcategoria.performAs(SeleccionarSubcategoria.java:24)\r\n\tat co.com.automatizacionAlmasoft.tasks.Admin.SeleccionarSubcategoria$ByteBuddy$D4Hmidae.performAs$accessor$lSpOxQY7(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)\r\n\tat co.com.automatizacionAlmasoft.tasks.Admin.SeleccionarSubcategoria$ByteBuddy$D4Hmidae.performAs(Unknown Source)\r\n\tat net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)\r\n\tat net.serenitybdd.screenplay.Actor.perform(Actor.java:229)\r\n\tat net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)\r\n\tat co.com.automatizacionAlmasoft.stepsdefinitions.Administrador.EditarSubcategoriaStepDefinitions.seleccioneLaSubcategoriaAActualizar(EditarSubcategoriaStepDefinitions.java:21)\r\n\tat ✽.seleccione la subcategoría a actualizar(src/test/resources/features/01_Administrador/09-EditarSubcategoria.feature:26)\r\n",
+              "duration": 21097814700,
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "seleccione la subcategoría a actualizar",
+            "match": {
+              "location": "EditarSubcategoriaStepDefinitions.seleccioneLaSubcategoriaAActualizar()"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "actualice los datos de la subcategoría",
+            "match": {
+              "location": "EditarSubcategoriaStepDefinitions.actualiceLosDatosDeLaSubcategoria(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "categoria"
+                ]
+              },
+              {
+                "cells": [
+                  "Subcategoria Editada",
+                  "Ataud"
+                ]
+              }
+            ],
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "el sistema deberá mostrar el mensaje de subcategoría actualizada \"Subcategoría actualizada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subcategoría actualizada",
+                  "offset": 66
+                }
+              ],
+              "location": "EditarSubcategoriaStepDefinitions.validarActualizacion(String)"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@editarSubcategoria"
+          }
+        ]
+      }
+    ],
+    "name": "Actualizar una subcategoría",
+    "description": "  Como usuario Administrador de AlmaSoft autenticado\n  Quiero actualizar una subcategoría\n  Para mantener la información actualizada",
+    "id": "actualizar-una-subcategoría",
+    "keyword": "Característica",
+    "uri": "src/test/resources/features/01_Administrador/09-EditarSubcategoria.feature",
     "tags": []
   }
 ]
